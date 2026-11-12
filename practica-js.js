@@ -103,6 +103,8 @@ const productos = [
     {id: 10, nombre: 'Base para portátil', precio: 80000, categoria: 'Accesorios', stock: 0}
 ];
 
+//RETO 4: forEach()
+
 console.log("---------------------------")
 console.log("Lista de productos")
 productos.forEach((productos, indice) => {
