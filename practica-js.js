@@ -22,6 +22,17 @@ function calcularDivision(a, b){
     const total = a / b;
     return total;
 }
+ function calcularPromedio(nota1, nota2, nota3){
+    const suma = nota1 + nota2 + nota3;
+    const promedio = suma / 3;
+    return promedio;
+ }
+
+console.log("Calcular el promedio")
+const resultadoPromedio = calcularPromedio(4.0, 3.5, 5.0);
+console.log(resultadoPromedio);
+
+
 console.log("Resultado de la suma")
 const resultadoSuma = calcularSuma(45, 50);
 console.log(resultadoSuma);
