@@ -79,3 +79,11 @@ const esMayorEdad = edad => edad >= 18;
 console.log("Control edad")
 const edad = esMayorEdad(15);
 console.log(edad);
+
+//Tarea #3
+
+const nombreCompleto = (nombre, apellido) => nombre + "" + apellido;
+
+console.log("Nombre Completo")
+const completo = nombreCompleto("Tatiana", "Pedreros");
+console.log(completo);
