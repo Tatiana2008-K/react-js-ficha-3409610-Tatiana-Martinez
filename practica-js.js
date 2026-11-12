@@ -125,3 +125,10 @@ console.log(precioConIva);
 
 const nombreMayuscula = productos.map(productos => productos.nombre.toUpperCase());
 console.log(nombreMayuscula);
+
+//Arreglo #3
+
+const resumenProductos = productos.map(
+    productos => `${productos.nombre} cuesta $${productos.precio}`
+);
+console.log(resumenProductos);
