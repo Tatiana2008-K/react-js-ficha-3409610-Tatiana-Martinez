@@ -115,3 +115,8 @@ productos.forEach((productos, indice) => {
 
 const nombre = productos.map(productos => productos.nombre);
 console.log(nombre);
+
+//Arreglo #1
+
+const precioConIva = productos.map(productos => productos.precio * 1.19);
+console.log(precioConIva);
