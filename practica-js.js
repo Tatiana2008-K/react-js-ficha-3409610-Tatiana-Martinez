@@ -71,3 +71,11 @@ const cuadrado = numero => numero * numero;
 console.log("Cuadraro")
 const cuadraroN = cuadrado(78);
 console.log(cuadraroN);
+
+// Tarea #2
+
+const esMayorEdad = edad => edad >= 18;
+
+console.log("Control edad")
+const edad = esMayorEdad(15);
+console.log(edad);
