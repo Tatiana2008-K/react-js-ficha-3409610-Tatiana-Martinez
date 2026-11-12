@@ -63,3 +63,11 @@ const aplicarIva = precio => precio * 1.19;
 console.log("Aplicacion de IVA")
 const resultadoIva = aplicarIva(50000);
 console.log(resultadoIva);
+
+// Tarea #1
+
+const cuadrado = numero => numero * numero;
+
+console.log("Cuadraro")
+const cuadraroN = cuadrado(78);
+console.log(cuadraroN);
