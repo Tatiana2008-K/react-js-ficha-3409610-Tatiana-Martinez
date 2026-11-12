@@ -1,6 +1,9 @@
+//el console.log es para mostrar la informacion en la terminal o consola
+//el return es para devolver un valor desde una funcion al lugar donde se llamo
+
 function calculartTotal(precio, cantidad) {
     const total = precio * cantidad;
-    return total;
+    return total; 
 }
 
 function calcularSuma(a, b) {
@@ -28,7 +31,7 @@ function calcularDivision(a, b){
     return promedio;
  }
 
-console.log("Calcular el promedio")
+console.log("Calcular el promedio")  
 const resultadoPromedio = calcularPromedio(4.0, 3.5, 5.0);
 console.log(resultadoPromedio);
 
