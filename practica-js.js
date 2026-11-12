@@ -102,3 +102,9 @@ const productos = [
     {id: 9, nombre: 'Memoria USB', precio: 35000, categoria: 'Almacenamiento', stock: 10},
     {id: 10, nombre: 'Base para portátil', precio: 80000, categoria: 'Accesorios', stock: 0}
 ];
+
+console.log("---------------------------")
+console.log("Lista de productos")
+productos.forEach((productos, indice) => {
+    console.log(`${indice + 1}. ${productos.nombre}`);
+});
