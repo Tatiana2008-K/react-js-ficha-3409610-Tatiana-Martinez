@@ -19,7 +19,8 @@ function calcularMultiplicacion(a,b) {
 }
 
 function calcularDivision(a, b){
-    const total = a / 
+    const total = a / b;
+    return total;
 }
 console.log("Resultado de la suma")
 const resultadoSuma = calcularSuma(45, 50);
