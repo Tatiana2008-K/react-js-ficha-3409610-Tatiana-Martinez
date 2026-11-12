@@ -110,3 +110,8 @@ console.log("Lista de productos")
 productos.forEach((productos, indice) => {
     console.log(`${indice + 1}. ${productos.nombre}`);
 });
+
+//RETO 5: map()
+
+const nombre = productos.map(productos => productos.nombre);
+console.log(nombre);
