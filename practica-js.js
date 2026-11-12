@@ -34,6 +34,10 @@ console.log("Resultado de la multiplicacion")
 const resultadoMulti = calcularMultiplicacion(12, 25);
 console.log(resultadoMulti);
 
+console.log("Resultado de la division")
+const resultadoDivision = calcularDivision(48, 8);
+console.log(resultadoDivision);
+
 console.log("Calcular total");
 const resultado = calculartTotal(50000, 3);
 console.log(resultado);
