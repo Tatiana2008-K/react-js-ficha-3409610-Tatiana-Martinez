@@ -132,3 +132,11 @@ const resumenProductos = productos.map(
     productos => `${productos.nombre} cuesta $${productos.precio}`
 );
 console.log(resumenProductos);
+
+//RETO 6: filter() y find()
+
+const disponibles = productos.filter(productos => productos.stock > 0);
+console.log(disponibles);
+
+const productos3 = productos.find(productos => productos.id === 3);
+console.log(productos3);
