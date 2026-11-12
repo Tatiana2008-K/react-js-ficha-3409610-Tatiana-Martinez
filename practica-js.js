@@ -1,6 +1,6 @@
 //el console.log es para mostrar la informacion en la terminal o consola
 //el return es para devolver un valor desde una funcion al lugar donde se llamo
-
+// su mayor diferencia es el objetivo principal del console log es mostrar datos en la consola, en cambio return entrega datos para otro uso de una funcion
 function calculartTotal(precio, cantidad) {
     const total = precio * cantidad;
     return total; 
@@ -55,3 +55,11 @@ console.log(resultadoDivision);
 console.log("Calcular total");
 const resultado = calculartTotal(50000, 3);
 console.log(resultado);
+
+//RETO 2: funciones flecha
+
+const aplicarIva = precio => precio * 1.19;
+
+console.log("Aplicacion de IVA")
+const resultadoIva = aplicarIva(50000);
+console.log(resultadoIva);
