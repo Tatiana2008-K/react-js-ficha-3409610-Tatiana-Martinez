@@ -160,3 +160,9 @@ const porCategoria = productos.filter(
     productos => productos.categoria === categoriaElegida
 );
 console.log(`Categoria ${categoriaElegida}:`, porCategoria);
+
+//Buscar el producto con id 5
+console.log("--------------------------------------------")
+const producto5 = productos.find(productos => productos.id === 8);
+console.log("Producto con id 8:", producto5);
+
