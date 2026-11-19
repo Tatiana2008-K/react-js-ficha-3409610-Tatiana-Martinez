@@ -145,3 +145,10 @@ console.log(productos3);
 console.log("--------------------------------------------")
 const caros = productos.filter(productos => productos.precio > 100000);
 console.log("Mayores a $100.000:", caros);
+
+//Filtrar productos con precio entre $50.000 y $200.000
+console.log("--------------------------------------------")
+const rango = productos.filter(
+    productos => productos.precio >= 50000 && productos.precio <= 200000
+);
+console.log("Entre $50.000 y $200.000:", rango);
