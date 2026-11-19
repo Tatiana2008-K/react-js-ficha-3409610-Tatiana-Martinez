@@ -188,4 +188,13 @@ console.log("---------------------------------------------")
 const valorInventario = productos.reduce(
     (total, productos) => total + productos.precio * productos.stock, 0
 );
-console.log("Valor total del inventario: $" + valorInventario.toLocaleString("es-CO"));
+//este console log imprime el total valor del inventario, el toLocalString("es-CO") es para convertir el numero en texto con el formato de colombia 
+console.log("Valor total del inventario: $" + valorInventario.toLocaleString("es-CO")); 
+
+console.log("-----------------------------------------------")
+const hayCaros = productos.some(productos => productos.precio > 1000000);
+console.log("¿Hay productos de más de $1.000.000?:", hayCaros);
+
+console.log("----------------------------------------------")
+const stockValido = productos.every(productos => productos.stock >= 0);
+console.log("¿Todos tienen stock >= 0?", stockValido);
