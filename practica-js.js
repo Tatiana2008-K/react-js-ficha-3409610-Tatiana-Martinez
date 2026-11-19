@@ -140,3 +140,8 @@ console.log(disponibles);
 
 const productos3 = productos.find(productos => productos.id === 3);
 console.log(productos3);
+
+//Filtrar productos con precio mayor a $100.000
+console.log("--------------------------------------------")
+const caros = productos.filter(productos => productos.precio > 100000);
+console.log("Mayores a $100.000:", caros);
