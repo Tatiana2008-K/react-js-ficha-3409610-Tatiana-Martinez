@@ -204,3 +204,8 @@ console.log("RETO 8")
 console.log("----------------------------")
 console.log("Template literals")
 console.log(`El producto ${productos[0].nombre} cuesta $${productos[0].precio}`);
+
+console.log("-----------------------------")
+console.log("Desestructuración")
+const { nombres, precio, stock } = productos[0];
+console.log(nombre, precio, stock);
