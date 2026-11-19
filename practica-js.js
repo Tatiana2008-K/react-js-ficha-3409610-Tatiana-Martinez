@@ -200,12 +200,19 @@ const stockValido = productos.every(productos => productos.stock >= 0);
 console.log("¿Todos tienen stock >= 0?", stockValido);
 
 //RETO 8: JavaScript moderno
-console.log("RETO 8")
-console.log("----------------------------")
-console.log("Template literals")
+console.log("RETO 8");
+console.log("----------------------------");
+console.log("Template literals");
 console.log(`El producto ${productos[0].nombre} cuesta $${productos[0].precio}`);
 
-console.log("-----------------------------")
-console.log("Desestructuración")
+console.log("-----------------------------");
+console.log("Desestructuración");
 const { nombres, precio, stock } = productos[0];
 console.log(nombre, precio, stock);
+
+console.log("-------------------------------");
+const productoActualizado = {
+    ...productos[0],
+    stock: 8
+};
+console.log(productoActualizado);
