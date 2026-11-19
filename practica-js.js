@@ -198,3 +198,9 @@ console.log("¿Hay productos de más de $1.000.000?:", hayCaros);
 console.log("----------------------------------------------")
 const stockValido = productos.every(productos => productos.stock >= 0);
 console.log("¿Todos tienen stock >= 0?", stockValido);
+
+//RETO 8: JavaScript moderno
+console.log("RETO 8")
+console.log("----------------------------")
+console.log("Template literals")
+console.log(`El producto ${productos[0].nombre} cuesta $${productos[0].precio}`);
