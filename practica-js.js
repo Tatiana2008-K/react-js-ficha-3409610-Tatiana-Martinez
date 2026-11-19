@@ -183,3 +183,9 @@ console.log("¿Hay algún producto agotado?", hayAgotados);
 console.log("---------------------------")
 const preciosValidos = productos.every(productos => productos.precio > 0);
 console.log("¿Todos los productos tiene precios mayores a 0?", preciosValidos);
+
+console.log("---------------------------------------------")
+const valorInventario = productos.reduce(
+    (total, productos) => total + productos.precio * productos.stock, 0
+);
+console.log("Valor total del inventario: $" + valorInventario.toLocaleString("es-CO"));
