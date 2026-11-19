@@ -1,7 +1,6 @@
 import ProductoCard from "./components/ProductoCard";
 import { productos } from "./data/productos";
-import '/App.css';
-
+import './App.css';
 function App() {
   const disponibles = productos.filter(productos => productos.stock > 0);
   const valorInventario = productos.reduce(
