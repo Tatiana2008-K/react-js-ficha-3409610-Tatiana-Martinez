@@ -173,3 +173,10 @@ function buscarProducto(id) {
 }
 console.log("Producto encontrado:")
 console.log(buscarProducto(5));
+
+//RETO 7: some(), every() y reduce()
+console.log("RETO 7")
+console.log("------------------------------------------------")
+const hayAgotados = productos.some(productos => productos.stock === 0);
+console.log("¿Hay algún producto agotado?", hayAgotados);
+
