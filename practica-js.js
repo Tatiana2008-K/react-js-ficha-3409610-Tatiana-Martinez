@@ -180,3 +180,6 @@ console.log("------------------------------------------------")
 const hayAgotados = productos.some(productos => productos.stock === 0);
 console.log("¿Hay algún producto agotado?", hayAgotados);
 
+console.log("---------------------------")
+const preciosValidos = productos.every(productos => productos.precio > 0);
+console.log("¿Todos los productos tiene precios mayores a 0?", preciosValidos);
