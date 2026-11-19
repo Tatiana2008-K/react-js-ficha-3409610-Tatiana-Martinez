@@ -163,6 +163,13 @@ console.log(`Categoria ${categoriaElegida}:`, porCategoria);
 
 //Buscar el producto con id 5
 console.log("--------------------------------------------")
-const producto5 = productos.find(productos => productos.id === 8);
-console.log("Producto con id 8:", producto5);
+const producto5 = productos.find(productos => productos.id === 5);
+console.log("Producto con id 5:", producto5);
 
+//Funcion buscarProducto(id) con find
+console.log("---------------------------------------------")
+function buscarProducto(id) {
+    return productos.find(productos => productos.id === id);
+}
+console.log("Producto encontrado:")
+console.log(buscarProducto(5));
