@@ -152,3 +152,11 @@ const rango = productos.filter(
     productos => productos.precio >= 50000 && productos.precio <= 200000
 );
 console.log("Entre $50.000 y $200.000:", rango);
+
+//Filtrar unicamente una categoria escogida
+console.log("--------------------------------------------")
+const categoriaElegida = "Pantallas";
+const porCategoria = productos.filter(
+    productos => productos.categoria === categoriaElegida
+);
+console.log(`Categoria ${categoriaElegida}:`, porCategoria);
