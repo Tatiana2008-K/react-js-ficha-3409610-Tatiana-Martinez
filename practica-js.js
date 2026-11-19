@@ -213,6 +213,10 @@ console.log(nombre, precio, stock);
 console.log("-------------------------------");
 const productoActualizado = {
     ...productos[0],
-    stock: 8
+    stock: 0
 };
 console.log(productoActualizado);
+
+console.log("-----------------------------");
+const estado = productoActualizado.stock > 0 ? 'Disponible' : 'Agotado';
+console.log(estado)
