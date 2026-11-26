@@ -86,3 +86,13 @@ h2{
   text-align: center;
   font-weight: bold;
 }
+
+.estado-inventario{
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.estado-inventario strong{
+  color: crimson;
+}
