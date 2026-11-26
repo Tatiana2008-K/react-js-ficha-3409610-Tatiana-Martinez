@@ -220,3 +220,16 @@ console.log(productoActualizado);
 console.log("-----------------------------");
 const estado = productoActualizado.stock > 0 ? 'Disponible' : 'Agotado';
 console.log(estado)
+
+//Funcion para buscar un producto por su ID
+function buscarProducto1(id) {
+    return productos.find(productos => productos.id === id);
+}
+console.log("----------------------------------------------");
+console.log("Buscar producto por ID");
+const productoEncontrado = buscarProducto1(7);
+if (productoEncontrado) {
+    console.log(productoEncontrado);
+} else {
+    console.log("Producto no encontrado")
+}
