@@ -4,15 +4,14 @@ import './App.css';
 function App() {
   const disponibles = productos.filter(productos => productos.stock > 0);
   const valorInventario = productos.reduce(
-    (total, productos) => total + productos.precios * productos.stock,
-    0
+    (total, productos) => total + productos.precio * productos.stock,0
   );
 
   return (
     <main  className="contenedor">
       <h1>Tienda tecnológica</h1>
       <p>Productos disponibles: {disponibles.length}</p>
-      <p>Valor del inventario: ${ valorInventario }</p>
+      <p>Valor del inventario: ${ valorInventario.toLocaleString("es-CO") }</p>
       <section className="productos">
         {productos.map(productos => (
           <ProductoCard
@@ -21,6 +20,18 @@ function App() {
           />
         ))}
       </section>
+      
+            <h2>Productos disponibles</h2>
+
+      <section className="disponibles">
+        {disponibles.map(producto => (
+          <ProductoCard
+            key={producto.id}
+            productos={producto}
+          />
+        ))}
+      </section>
+
     </main>
   );
 }
